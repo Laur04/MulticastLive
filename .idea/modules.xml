@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Multicast_Live.iml" filepath="$PROJECT_DIR$/.idea/modules/Multicast_Live.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Multicast_Live.multicast-live.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Multicast_Live.multicast-live.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/multicast-live/Multicast_Live.multicast-live.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/multicast-live/Multicast_Live.multicast-live.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/multicast-live/Multicast_Live.multicast-live.main.iml" filepath="$PROJECT_DIR$/.idea/modules/multicast-live/Multicast_Live.multicast-live.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/multicast-live/Multicast_Live.multicast-live.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/multicast-live/Multicast_Live.multicast-live.unitTest.iml" />
+    </modules>
+  </component>
+</project>

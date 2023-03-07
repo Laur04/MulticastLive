@@ -1,0 +1,49 @@
+apply plugin: 'org.jetbrains.dokka'
+
+buildscript {
+    ext {
+        // Upgrade StreamPack version here
+        streampackCode = 2_003_001
+        streampackVersion = '2.3.1'
+
+        minSdk = 21
+        compileSdk = 31
+        targetSdk = 31
+        appTargetSdk = 31
+
+        kotlin_version = '1.6.10'
+        dokka_version = '1.6.10'
+        androidx_core_version = '1.7.0'
+    }
+
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.2.1'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "org.jetbrains.dokka:dokka-gradle-plugin:${dokka_version}"
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+    }
+}
+
+tasks.dokkaHtmlMultiModule.configure {
+    outputDirectory.set(file("$buildDir/dokkaCustomMultiModuleOutput"))
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

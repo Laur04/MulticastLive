@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="viewmodel"
+            type="com.lauren.multicastlive.ui.main.PreviewViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:keepScreenOn="true">
+
+        <io.github.thibaultbee.streampack.views.AutoFitSurfaceView
+            android:id="@+id/preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/liveButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/switchButton"
+            android:layout_margin="10dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:contentDescription="@string/switch_camera_source"
+            android:onClick="@{() -> viewmodel.toggleCamera()}"
+            android:src="@drawable/ic_switch_camera_24px"
+            app:tint="@color/colorPrimaryDark"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+        />
+        <ToggleButton
+            android:id="@+id/liveButton"
+            android:layout_margin="10dp"
+            android:layout_width="110dp"
+            android:layout_height="60dp"
+            android:text="@string/live"
+            android:textOff="@string/live"
+            android:textOn="@string/stop"
+            app:tint="@color/colorPrimary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+        />
+        <ToggleButton
+            android:layout_margin="10dp"
+            android:paddingTop="18dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:contentDescription="@string/mute_unmute_microphone"
+            android:drawableTop="@drawable/ic_toggle_mic_button"
+            android:onCheckedChanged="@{(_, checked) -> viewmodel.setMute(checked)}"
+            android:textOff=""
+            android:textOn=""
+            app:tint="@color/colorPrimary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+        />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

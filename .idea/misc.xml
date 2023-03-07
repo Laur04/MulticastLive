@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="multicast-live/src/main/res/drawable/ic_baseline_mic_24.xml" value="0.111" />
+        <entry key="multicast-live/src/main/res/drawable/ic_baseline_mic_off_24.xml" value="0.111" />
+        <entry key="multicast-live/src/main/res/drawable/ic_baseline_more_vert_24.xml" value="0.111" />
+        <entry key="multicast-live/src/main/res/drawable/ic_switch_camera_24px.xml" value="0.111" />
+        <entry key="multicast-live/src/main/res/drawable/ic_toggle_mic_button.xml" value="0.111" />
+        <entry key="multicast-live/src/main/res/layout/main_activity.xml" value="0.31927083333333334" />
+        <entry key="multicast-live/src/main/res/layout/main_fragment.xml" value="0.31927083333333334" />
+        <entry key="multicast-live/src/main/res/layout/settings_activity.xml" value="0.31927083333333334" />
+        <entry key="multicast-live/src/main/res/menu/actions.xml" value="0.31927083333333334" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: io.github.thibaultbee:streampack:2.3.1@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/8b87420100ace3ab0020e81c3649d953/transformed/streampack-2.3.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/9d6a83ea103b46b557f4680485b24804/transformed/streampack-2.3.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/9d6a83ea103b46b557f4680485b24804/transformed/streampack-2.3.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/9d6a83ea103b46b557f4680485b24804/transformed/streampack-2.3.1/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
